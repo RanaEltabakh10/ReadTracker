@@ -7,21 +7,24 @@ body {
 }
 
 body, .app {
-  background: white;
+  background: #e1cfde;
 }
 
 /* main page */
 
 .list-books-title {
   padding: 10px 0;
-  background: #2e7c31;
+  background: #20041c;
   text-align: center;
 }
 
 .list-books-title h1 {
   font-weight: 400;
   margin: 0;
-  color: white;
+  color: #ffffff;
+  text-align: center;
+  font-style:oblique;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .list-books-content {
@@ -29,18 +32,20 @@ body, .app {
   flex: 1;
 }
 
-.bookshelf {
-  padding: 0 10px 20px;
+.book-shelf {
+  padding: 0 30px 20px;
 }
 
 @media (min-width: 600px) {
-  .bookshelf {
+  .book-shelf {
     padding: 0 20px 40px;
   }
 }
 
-.bookshelf-title {
-  border-bottom: 1px solid #dedede;
+.shelf-title {
+  border-bottom: 1px solid #572064;
+  margin-top: 80px;
+  text-align: center;
 }
 
 .bookshelf-books {
@@ -53,23 +58,23 @@ body, .app {
   bottom: 25px;
 }
 
-.open-search button {
+.open-serch__link {
   display: block;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #2e7d32;
+  background: #b271b4;
   background-image: url('./icons/add.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 28px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(112, 41, 112, 0.16), 0 3px 6px rgba(112, 41, 112, 0.16);
   font-size: 0;
   outline: 0;
 }
 
-.open-search button:hover {
-  background-color: rgb(0, 102, 0);
+.open-serch__link:hover {
+  background-color: #20041c;
 }
 
 
@@ -114,12 +119,14 @@ body, .app {
 }
 
 button:active {
-  border: red;
+  border: rgb(61, 10, 57);
   outline: none;
 }
 
 .search-books-results {
   padding: 80px 10px 20px;
+  display: flex;
+  justify-content: center;
 }
 
 /* books grid */
@@ -169,7 +176,7 @@ button:active {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #60ac5d;
+  background: #b46dbb;
   background-image: url('./icons/arrow-drop-down.svg');
   background-repeat: no-repeat;
   background-position: center;
